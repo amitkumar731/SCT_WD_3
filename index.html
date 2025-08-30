@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillCraft Technology - Quiz Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-brain logo-icon"></i>
+                <h1>SkillCraft Quiz Challenge</h1>
+            </div>
+        </div>
+
+        <div class="quiz-container" id="quiz-container">
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+                <div class="progress-text">
+                    <span>Question <span id="current-question">1</span> of <span id="total-questions">5</span></span>
+                    <span>Score: <span id="current-score">0</span></span>
+                </div>
+            </div>
+
+            <div class="question-number">Question <span id="q-num">1</span></div>
+            <div class="question-text" id="question-text"></div>
+
+            <div class="options-container" id="options-container">
+                <!-- Options will be inserted here by JavaScript -->
+            </div>
+
+            <div class="navigation">
+                <button id="prev-btn">Previous</button>
+                <button id="next-btn">Next</button>
+                <button id="submit-btn">Submit Quiz</button>
+            </div>
+        </div>
+
+        <div class="results-container" id="results-container">
+            <h2>Quiz Results</h2>
+            <div class="score-container">
+                <div class="score-text">Your Score</div>
+                <div class="score-value" id="final-score">0/5</div>
+                <div class="score-message" id="score-message">Well done!</div>
+            </div>
+
+            <div class="review-container" id="review-container">
+                <!-- Review content will be inserted here by JavaScript -->
+            </div>
+
+            <button id="restart-btn">Take Quiz Again</button>
+        </div>
+
+        <div class="footer">
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Support</a>
+            <p>Designed with Canva</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
